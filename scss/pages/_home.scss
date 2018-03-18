@@ -1,0 +1,63 @@
+.home-hero {
+    width: 100%;
+    background-image: url('images/ceb-hero-type.jpg');
+    min-height: 400px;
+    @include breakpoint($tablet) {
+        min-height: 200px;
+    }
+}
+
+.container {
+    @include container;
+}
+
+.hero-container-left {
+    @include span(4);
+    @include breakpoint($tablet) {
+        @include span(12);
+    }
+}
+
+.hero-callout {
+    padding: 1em;
+    background: rgba(74, 74, 74, .5);
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+.hero-callout h1 {
+    margin: 0;
+    padding: 8px 0px 0px 0px;
+}
+
+.hero-callout a {
+    color: $white;
+    font-weight: 400;
+}
+
+.hero-container-left h1 {
+    font-family: $heading-font-family;
+    color: $white;
+    font-size: 4em;
+    font-weight: 300;
+}
+
+.hero-container-right {
+    @include span(6 last);
+}
+
+.hero-container-right h1 {
+    color: $medium-gray;
+    padding: 20px;
+    font-size: 36px;
+}
+
+.home-entry-content {
+    margin-top: 40px;
+}
+
+.home-entry-content blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    color: $secondarycolor;
+}

@@ -1,0 +1,32 @@
+.primary-nav {
+    margin-top: 65px;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: $white;
+    font-family: $base-font-family;
+    font-size: 1em;
+    float: right;
+    @include breakpoint($tablet) {
+        margin-top: 45px;
+        font-size: .8em;
+    }
+}
+
+.primary-nav li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.primary-nav li a {
+    color: $secondarycolor;
+    display: inline-block;
+    text-align: left;
+    padding: 6px 6px 6px 6px;
+    text-decoration: none;
+}
+
+.primary-nav li a:hover {
+    background-color: $primarycolor;
+    color: $white;
+}

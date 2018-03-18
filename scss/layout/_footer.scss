@@ -1,0 +1,46 @@
+footer {
+    background-color: $white;
+    padding-top: 15px;
+}
+
+.footer {
+    @include container;
+    margin-top: 5em;
+    border-top: solid 1px $secondarycolor;
+    padding-top: 15px;
+}
+
+.footer a {
+    color: $primarycolor;
+    text-decoration: none;
+}
+
+.footer p {
+    color: $secondarycolor;
+    font-size: .9em;
+    line-height: 1.5em;
+}
+
+.footer-left {
+    @include span(10);
+    @include breakpoint($tablet) {
+        @include span(9);
+        padding-left: 1em;
+    }
+    @include breakpoint($mobile) {
+        @include span(12);
+        padding-left: 1em;
+    }
+}
+
+.footer-right {
+    @include span(2 last);
+    @include breakpoint($tablet) {
+        @include span(3 last);
+        padding-right: 1em;
+    }
+    @include breakpoint($mobile) {
+        @include span(12);
+        padding-left: 1em;
+    }
+}

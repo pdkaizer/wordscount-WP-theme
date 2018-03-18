@@ -1,0 +1,151 @@
+body {
+    background-color: $white;
+}
+
+.img-responsive {
+    @include img-responsive;
+}
+
+.page-wrapper {
+    @include container;
+}
+
+article {
+    @include push(1);
+    @include span(9);
+}
+
+article h1 {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+article h2 {
+    font-weight: 300;
+    font-size: 28px;
+}
+
+article h3 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+article ul {
+    margin-bottom: 1em;
+}
+
+article ul li {
+    list-style: disc;
+    margin-left: 2em;
+}
+
+.samples {
+    @include span(9);
+}
+
+.testimonials {
+    margin-top: 25px;
+}
+
+.quote {
+    color: $primarycolor;
+    padding: 5px 10px 5px 10px;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.quote-person {
+    font-style: normal;
+    font-size: .8em;
+}
+
+.card {
+    @include span(6);
+    padding: 10px;
+    border-top: 5px solid $primarycolor;
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    margin-bottom: 15px;
+    @include breakpoint($tablet) {
+        @include span(12);
+    }
+}
+
+.card:nth-child(2n) {
+    @include span(6 last);
+    padding: 10px;
+    border-top: 5px solid $primarycolor;
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    margin-bottom: 15px;
+    @include breakpoint($tablet) {
+        @include span(12);
+    }
+}
+
+.services-left {
+    border-top: 5px solid $primarycolor;
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    padding: 15px;
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+    @include breakpoint($mobile) {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.services-right {
+    border-top: 5px solid $primarycolor;
+    border-left: 1px solid $light-gray;
+    border-bottom: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    padding: 15px;
+    float: left;
+    width: 40%;
+    @include breakpoint($mobile) {
+        width: 100%;
+    }
+}
+
+.sample-item {
+    margin-bottom: 15px;
+    border-bottom: solid 1px $light-gray;
+    padding-bottom: 15px;
+}
+
+.sample-item:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.sample-item img {
+    float: right;
+    margin-left: 10px;
+    padding: 1px;
+    border: solid 1px $light-gray;
+    @include breakpoint($mobile) {
+        float: left;
+        margin-left: 0;
+        margin-right: 55px;
+    }
+}
+
+.footer-small {
+    font-size: 11px !important;
+}
+
+.entry-content img {
+    padding: 1px;
+    border: solid 1px $light-gray;
+}
+
+.alignright {
+    float: right;
+    margin-left: 10px;
+}

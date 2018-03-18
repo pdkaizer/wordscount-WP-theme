@@ -1,0 +1,58 @@
+/*!
+Theme Name: Words Count
+Theme URI:
+Author: Peter Kaizer
+Author URI: http://peterkaizer.com
+Description: Words Count Wordpress theme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Words Count
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Mission Helpers is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+/*--------------------------------------------------------------
+# Import libraries
+--------------------------------------------------------------*/
+
+@import 'lib/bourbon/bourbon';
+@import "lib/susy/susy";
+@import "lib/breakpoint/breakpoint";
+
+/*--------------------------------------------------------------
+# Base styles
+--------------------------------------------------------------*/
+
+@import 'lib/normalize';
+@import "base/base";
+@import "layout/grid-settings";
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+@import "utilities/utilities";
+@import "utilities/mixins";
+
+/*--------------------------------------------------------------
+# Layout styles
+--------------------------------------------------------------*/
+
+@import "layout/header";
+@import "layout/footer";
+@import "components/navigation";
+@import "components/off-canvas";
+//@import "components/slick";
+//@import "components/slick-theme";
+@import "layout/page-body";
+
+/*--------------------------------------------------------------
+# Page specific styles
+--------------------------------------------------------------*/
+
+@import "pages/home";
